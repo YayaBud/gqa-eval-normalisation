@@ -1,0 +1,37 @@
+{
+  "model": "OpenGVLab/InternVL3-8B",
+  "tag": "InternVL3-8B",
+  "mode": "single-pass-raw",
+  "subset": "test",
+  "seed": 42,
+  "sample": 5000,
+  "snap_to_vocab": true,
+  "n": 1300,
+  "exact_match": 66.08,
+  "soft_acc": 68.54,
+  "token_f1": 66.77,
+  "wall_time_s": 1091.7,
+  "sec_per_q": 0.84,
+  "per_type": {
+    "choose": {
+      "n": 150,
+      "em": 88.0
+    },
+    "compare": {
+      "n": 47,
+      "em": 74.47
+    },
+    "logical": {
+      "n": 145,
+      "em": 86.9
+    },
+    "query": {
+      "n": 679,
+      "em": 48.31
+    },
+    "verify": {
+      "n": 279,
+      "em": 85.3
+    }
+  }
+}

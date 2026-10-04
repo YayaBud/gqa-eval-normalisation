@@ -1,0 +1,51 @@
+{
+  "systems": {
+    "InternVL3-14B": {
+      "n": 5000,
+      "raw_in_vocab_pct": 95.32,
+      "mean_raw_tokens": 1.04,
+      "delta": 0.38
+    },
+    "InternVL3-2B": {
+      "n": 5000,
+      "raw_in_vocab_pct": 79.94,
+      "mean_raw_tokens": 1.4,
+      "delta": 5.06
+    },
+    "InternVL3-8B": {
+      "n": 5000,
+      "raw_in_vocab_pct": 86.04,
+      "mean_raw_tokens": 1.26,
+      "delta": 2.96
+    },
+    "Qwen2-VL-2B-Instruct": {
+      "n": 5000,
+      "raw_in_vocab_pct": 87.8,
+      "mean_raw_tokens": 1.11,
+      "delta": 0.68
+    },
+    "Qwen2.5-VL-3B-Instruct": {
+      "n": 5000,
+      "raw_in_vocab_pct": 60.98,
+      "mean_raw_tokens": 2.03,
+      "delta": 12.54
+    },
+    "Qwen2.5-VL-7B-Instruct": {
+      "n": 5000,
+      "raw_in_vocab_pct": 80.7,
+      "mean_raw_tokens": 1.31,
+      "delta": 2.98
+    },
+    "Qwen3-VL-2B-Instruct": {
+      "n": 5000,
+      "raw_in_vocab_pct": 87.34,
+      "mean_raw_tokens": 1.21,
+      "delta": 1.66
+    }
+  },
+  "pearson_r": -0.97,
+  "spearman_rho": -1.0,
+  "loo_pearson_min": -0.98,
+  "loo_pearson_max": -0.86,
+  "n": 7
+}

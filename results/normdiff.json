@@ -1,0 +1,65 @@
+{
+  "systems": {
+    "InternVL3-14B": {
+      "n": 5000,
+      "gained": 23,
+      "lost": 4,
+      "net": 19,
+      "agree_pct": 97.7,
+      "disagree_pct": 2.3
+    },
+    "InternVL3-2B": {
+      "n": 5000,
+      "gained": 267,
+      "lost": 14,
+      "net": 253,
+      "agree_pct": 88.1,
+      "disagree_pct": 11.9
+    },
+    "InternVL3-8B": {
+      "n": 5000,
+      "gained": 162,
+      "lost": 14,
+      "net": 148,
+      "agree_pct": 92.5,
+      "disagree_pct": 7.5
+    },
+    "Qwen2-VL-2B-Instruct": {
+      "n": 5000,
+      "gained": 46,
+      "lost": 12,
+      "net": 34,
+      "agree_pct": 95.6,
+      "disagree_pct": 4.4
+    },
+    "Qwen2.5-VL-3B-Instruct": {
+      "n": 5000,
+      "gained": 641,
+      "lost": 14,
+      "net": 627,
+      "agree_pct": 73.0,
+      "disagree_pct": 27.0
+    },
+    "Qwen2.5-VL-7B-Instruct": {
+      "n": 5000,
+      "gained": 167,
+      "lost": 18,
+      "net": 149,
+      "agree_pct": 87.5,
+      "disagree_pct": 12.5
+    },
+    "Qwen3-VL-2B-Instruct": {
+      "n": 5000,
+      "gained": 92,
+      "lost": 9,
+      "net": 83,
+      "agree_pct": 94.1,
+      "disagree_pct": 5.9
+    }
+  },
+  "total_gained": 1398,
+  "total_lost": 85,
+  "all_lose_some": true,
+  "disagree_min": 2.3,
+  "disagree_max": 27.0
+}

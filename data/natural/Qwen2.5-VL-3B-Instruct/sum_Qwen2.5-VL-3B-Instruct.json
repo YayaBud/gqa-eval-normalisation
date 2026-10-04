@@ -1,0 +1,37 @@
+{
+  "model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "tag": "Qwen2.5-VL-3B-Instruct",
+  "mode": "single-pass-raw",
+  "subset": "test",
+  "seed": 42,
+  "sample": 5000,
+  "snap_to_vocab": true,
+  "n": 5000,
+  "exact_match": 50.76,
+  "soft_acc": 52.0,
+  "token_f1": 51.15,
+  "wall_time_s": 3124.2,
+  "sec_per_q": 0.625,
+  "per_type": {
+    "choose": {
+      "n": 635,
+      "em": 88.19
+    },
+    "compare": {
+      "n": 157,
+      "em": 73.89
+    },
+    "logical": {
+      "n": 601,
+      "em": 83.53
+    },
+    "query": {
+      "n": 2562,
+      "em": 18.07
+    },
+    "verify": {
+      "n": 1045,
+      "em": 85.84
+    }
+  }
+}

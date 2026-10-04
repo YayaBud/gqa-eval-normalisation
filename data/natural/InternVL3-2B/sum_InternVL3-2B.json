@@ -1,0 +1,37 @@
+{
+  "model": "OpenGVLab/InternVL3-2B",
+  "tag": "InternVL3-2B",
+  "mode": "single-pass-raw",
+  "subset": "test",
+  "seed": 42,
+  "sample": 5000,
+  "snap_to_vocab": true,
+  "n": 5000,
+  "exact_match": 61.26,
+  "soft_acc": 63.42,
+  "token_f1": 61.92,
+  "wall_time_s": 3673.0,
+  "sec_per_q": 0.735,
+  "per_type": {
+    "choose": {
+      "n": 635,
+      "em": 88.19
+    },
+    "compare": {
+      "n": 157,
+      "em": 61.15
+    },
+    "logical": {
+      "n": 601,
+      "em": 83.53
+    },
+    "query": {
+      "n": 2562,
+      "em": 39.93
+    },
+    "verify": {
+      "n": 1045,
+      "em": 84.4
+    }
+  }
+}

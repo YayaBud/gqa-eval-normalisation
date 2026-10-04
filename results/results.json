@@ -1,0 +1,542 @@
+{
+  "meta": {
+    "generated": "2026-10-04T07:32:31+00:00",
+    "post_strat_weights": {
+      "choose": 0.127,
+      "compare": 0.0314,
+      "logical": 0.1202,
+      "query": 0.5124,
+      "verify": 0.209
+    }
+  },
+  "balanced": {
+    "InternVL3-14B": {
+      "n": 4830,
+      "per_type": {
+        "choose": {
+          "n": 965,
+          "correct": 876,
+          "em": 90.78
+        },
+        "compare": {
+          "n": 963,
+          "correct": 754,
+          "em": 78.3
+        },
+        "logical": {
+          "n": 975,
+          "correct": 848,
+          "em": 86.97
+        },
+        "query": {
+          "n": 957,
+          "correct": 559,
+          "em": 58.41
+        },
+        "verify": {
+          "n": 970,
+          "correct": 850,
+          "em": 87.63
+        }
+      },
+      "macro": 80.42,
+      "natural": 72.69
+    },
+    "InternVL3-8B": {
+      "n": 5000,
+      "per_type": {
+        "choose": {
+          "n": 1000,
+          "correct": 897,
+          "em": 89.7
+        },
+        "compare": {
+          "n": 1000,
+          "correct": 733,
+          "em": 73.3
+        },
+        "logical": {
+          "n": 1000,
+          "correct": 865,
+          "em": 86.5
+        },
+        "query": {
+          "n": 1000,
+          "correct": 545,
+          "em": 54.5
+        },
+        "verify": {
+          "n": 1000,
+          "correct": 885,
+          "em": 88.5
+        }
+      },
+      "macro": 78.5,
+      "natural": 70.51
+    },
+    "InternVL3-2B": {
+      "n": 5000,
+      "per_type": {
+        "choose": {
+          "n": 1000,
+          "correct": 872,
+          "em": 87.2
+        },
+        "compare": {
+          "n": 1000,
+          "correct": 653,
+          "em": 65.3
+        },
+        "logical": {
+          "n": 1000,
+          "correct": 834,
+          "em": 83.4
+        },
+        "query": {
+          "n": 1000,
+          "correct": 504,
+          "em": 50.4
+        },
+        "verify": {
+          "n": 1000,
+          "correct": 859,
+          "em": 85.9
+        }
+      },
+      "macro": 74.44,
+      "natural": 66.93
+    },
+    "Qwen2-VL-2B": {
+      "n": 5000,
+      "per_type": {
+        "choose": {
+          "n": 1000,
+          "correct": 883,
+          "em": 88.3
+        },
+        "compare": {
+          "n": 1000,
+          "correct": 675,
+          "em": 67.5
+        },
+        "logical": {
+          "n": 1000,
+          "correct": 849,
+          "em": 84.9
+        },
+        "query": {
+          "n": 1000,
+          "correct": 469,
+          "em": 46.9
+        },
+        "verify": {
+          "n": 1000,
+          "correct": 867,
+          "em": 86.7
+        }
+      },
+      "macro": 74.86,
+      "natural": 65.69
+    },
+    "Qwen2.5-VL-3B": {
+      "n": 5000,
+      "per_type": {
+        "choose": {
+          "n": 1000,
+          "correct": 895,
+          "em": 89.5
+        },
+        "compare": {
+          "n": 1000,
+          "correct": 666,
+          "em": 66.6
+        },
+        "logical": {
+          "n": 1000,
+          "correct": 856,
+          "em": 85.6
+        },
+        "query": {
+          "n": 1000,
+          "correct": 447,
+          "em": 44.7
+        },
+        "verify": {
+          "n": 1000,
+          "correct": 863,
+          "em": 86.3
+        }
+      },
+      "macro": 74.54,
+      "natural": 64.69
+    },
+    "Qwen3-VL-2B raw": {
+      "n": 5000,
+      "per_type": {
+        "choose": {
+          "n": 1000,
+          "correct": 850,
+          "em": 85.0
+        },
+        "compare": {
+          "n": 1000,
+          "correct": 637,
+          "em": 63.7
+        },
+        "logical": {
+          "n": 1000,
+          "correct": 826,
+          "em": 82.6
+        },
+        "query": {
+          "n": 1000,
+          "correct": 492,
+          "em": 49.2
+        },
+        "verify": {
+          "n": 1000,
+          "correct": 837,
+          "em": 83.7
+        }
+      },
+      "macro": 72.84,
+      "natural": 65.43
+    }
+  },
+  "baseline_pairs": {
+    "InternVL3-14B vs InternVL3-8B": {
+      "unweighted_delta": 1.84,
+      "mcnemar_z": 3.72,
+      "unweighted_significant": true,
+      "poststrat_delta": 2.15,
+      "poststrat_z": 2.87,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        0.69,
+        3.64
+      ],
+      "disagreement": null
+    },
+    "InternVL3-14B vs InternVL3-2B": {
+      "unweighted_delta": 5.82,
+      "mcnemar_z": 10.0,
+      "unweighted_significant": true,
+      "poststrat_delta": 5.74,
+      "poststrat_z": 7.11,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        4.15,
+        7.33
+      ],
+      "disagreement": null
+    },
+    "InternVL3-14B vs Qwen2-VL-2B": {
+      "unweighted_delta": 5.55,
+      "mcnemar_z": 9.17,
+      "unweighted_significant": true,
+      "poststrat_delta": 7.19,
+      "poststrat_z": 8.33,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        5.5,
+        8.9
+      ],
+      "disagreement": null
+    },
+    "InternVL3-14B vs Qwen2.5-VL-3B": {
+      "unweighted_delta": 5.86,
+      "mcnemar_z": 9.39,
+      "unweighted_significant": true,
+      "poststrat_delta": 8.12,
+      "poststrat_z": 8.87,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        6.32,
+        9.94
+      ],
+      "disagreement": null
+    },
+    "InternVL3-14B vs Qwen3-VL-2B raw": {
+      "unweighted_delta": 7.52,
+      "mcnemar_z": 12.01,
+      "unweighted_significant": true,
+      "poststrat_delta": 7.3,
+      "poststrat_z": 8.9,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        5.69,
+        8.92
+      ],
+      "disagreement": null
+    },
+    "InternVL3-8B vs InternVL3-2B": {
+      "unweighted_delta": 4.06,
+      "mcnemar_z": 7.15,
+      "unweighted_significant": true,
+      "poststrat_delta": 3.59,
+      "poststrat_z": 4.49,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        2.03,
+        5.15
+      ],
+      "disagreement": null
+    },
+    "InternVL3-8B vs Qwen2-VL-2B": {
+      "unweighted_delta": 3.64,
+      "mcnemar_z": 6.06,
+      "unweighted_significant": true,
+      "poststrat_delta": 4.82,
+      "poststrat_z": 5.58,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        3.13,
+        6.54
+      ],
+      "disagreement": null
+    },
+    "InternVL3-8B vs Qwen2.5-VL-3B": {
+      "unweighted_delta": 3.96,
+      "mcnemar_z": 6.45,
+      "unweighted_significant": true,
+      "poststrat_delta": 5.83,
+      "poststrat_z": 6.68,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        4.11,
+        7.55
+      ],
+      "disagreement": null
+    },
+    "InternVL3-8B vs Qwen3-VL-2B raw": {
+      "unweighted_delta": 5.66,
+      "mcnemar_z": 9.07,
+      "unweighted_significant": true,
+      "poststrat_delta": 5.09,
+      "poststrat_z": 6.25,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        3.5,
+        6.69
+      ],
+      "disagreement": null
+    },
+    "InternVL3-2B vs Qwen2-VL-2B": {
+      "unweighted_delta": -0.42,
+      "mcnemar_z": -0.67,
+      "unweighted_significant": false,
+      "poststrat_delta": 1.24,
+      "poststrat_z": 1.4,
+      "poststrat_significant": false,
+      "poststrat_ci95": [
+        -0.49,
+        2.97
+      ],
+      "disagreement": "sign_flip"
+    },
+    "InternVL3-2B vs Qwen2.5-VL-3B": {
+      "unweighted_delta": -0.1,
+      "mcnemar_z": -0.15,
+      "unweighted_significant": false,
+      "poststrat_delta": 2.24,
+      "poststrat_z": 2.56,
+      "poststrat_significant": true,
+      "poststrat_ci95": [
+        0.53,
+        3.96
+      ],
+      "disagreement": "sign_flip"
+    },
+    "InternVL3-2B vs Qwen3-VL-2B raw": {
+      "unweighted_delta": 1.6,
+      "mcnemar_z": 2.52,
+      "unweighted_significant": true,
+      "poststrat_delta": 1.5,
+      "poststrat_z": 1.78,
+      "poststrat_significant": false,
+      "poststrat_ci95": [
+        -0.14,
+        3.15
+      ],
+      "disagreement": "verdict_change"
+    },
+    "Qwen2-VL-2B vs Qwen2.5-VL-3B": {
+      "unweighted_delta": 0.32,
+      "mcnemar_z": 0.53,
+      "unweighted_significant": false,
+      "poststrat_delta": 1.0,
+      "poststrat_z": 1.18,
+      "poststrat_significant": false,
+      "poststrat_ci95": [
+        -0.66,
+        2.67
+      ],
+      "disagreement": null
+    },
+    "Qwen2-VL-2B vs Qwen3-VL-2B raw": {
+      "unweighted_delta": 2.02,
+      "mcnemar_z": 3.29,
+      "unweighted_significant": true,
+      "poststrat_delta": 0.26,
+      "poststrat_z": 0.32,
+      "poststrat_significant": false,
+      "poststrat_ci95": [
+        -1.33,
+        1.85
+      ],
+      "disagreement": "verdict_change"
+    },
+    "Qwen2.5-VL-3B vs Qwen3-VL-2B raw": {
+      "unweighted_delta": 1.7,
+      "mcnemar_z": 2.62,
+      "unweighted_significant": true,
+      "poststrat_delta": -0.74,
+      "poststrat_z": -0.87,
+      "poststrat_significant": false,
+      "poststrat_ci95": [
+        -2.4,
+        0.92
+      ],
+      "disagreement": "sign_flip"
+    },
+    "_summary": {
+      "n_pairs": 15,
+      "n_disagree": 5,
+      "n_sign_flip": 3,
+      "n_verdict_change": 2
+    }
+  },
+  "normalisation_impact": {
+    "InternVL3-14B": {
+      "n": 5000,
+      "stale_normaliser": 71.68,
+      "fixed_normaliser": 72.06,
+      "delta": 0.38
+    },
+    "InternVL3-2B": {
+      "n": 5000,
+      "stale_normaliser": 61.26,
+      "fixed_normaliser": 66.32,
+      "delta": 5.06
+    },
+    "InternVL3-8B": {
+      "n": 5000,
+      "stale_normaliser": 66.52,
+      "fixed_normaliser": 69.48,
+      "delta": 2.96
+    },
+    "Qwen2-VL-2B-Instruct": {
+      "n": 5000,
+      "stale_normaliser": 63.84,
+      "fixed_normaliser": 64.52,
+      "delta": 0.68
+    },
+    "Qwen2.5-VL-3B-Instruct": {
+      "n": 5000,
+      "stale_normaliser": 50.76,
+      "fixed_normaliser": 63.3,
+      "delta": 12.54
+    },
+    "Qwen2.5-VL-7B-Instruct": {
+      "n": 5000,
+      "stale_normaliser": 59.58,
+      "fixed_normaliser": 62.56,
+      "delta": 2.98
+    },
+    "Qwen3-VL-2B-Instruct": {
+      "n": 5000,
+      "stale_normaliser": 64.16,
+      "fixed_normaliser": 65.82,
+      "delta": 1.66
+    }
+  },
+  "normalisation_ranks": {
+    "systems": {
+      "InternVL3-14B": {
+        "n": 5000,
+        "stale_normaliser": 71.68,
+        "fixed_normaliser": 72.06,
+        "delta": 0.38,
+        "rank_stale": 1,
+        "rank_fixed": 1,
+        "rank_move": 0
+      },
+      "InternVL3-2B": {
+        "n": 5000,
+        "stale_normaliser": 61.26,
+        "fixed_normaliser": 66.32,
+        "delta": 5.06,
+        "rank_stale": 5,
+        "rank_fixed": 3,
+        "rank_move": 2
+      },
+      "InternVL3-8B": {
+        "n": 5000,
+        "stale_normaliser": 66.52,
+        "fixed_normaliser": 69.48,
+        "delta": 2.96,
+        "rank_stale": 2,
+        "rank_fixed": 2,
+        "rank_move": 0
+      },
+      "Qwen2-VL-2B-Instruct": {
+        "n": 5000,
+        "stale_normaliser": 63.84,
+        "fixed_normaliser": 64.52,
+        "delta": 0.68,
+        "rank_stale": 4,
+        "rank_fixed": 5,
+        "rank_move": -1
+      },
+      "Qwen2.5-VL-3B-Instruct": {
+        "n": 5000,
+        "stale_normaliser": 50.76,
+        "fixed_normaliser": 63.3,
+        "delta": 12.54,
+        "rank_stale": 7,
+        "rank_fixed": 6,
+        "rank_move": 1
+      },
+      "Qwen2.5-VL-7B-Instruct": {
+        "n": 5000,
+        "stale_normaliser": 59.58,
+        "fixed_normaliser": 62.56,
+        "delta": 2.98,
+        "rank_stale": 6,
+        "rank_fixed": 7,
+        "rank_move": -1
+      },
+      "Qwen3-VL-2B-Instruct": {
+        "n": 5000,
+        "stale_normaliser": 64.16,
+        "fixed_normaliser": 65.82,
+        "delta": 1.66,
+        "rank_stale": 3,
+        "rank_fixed": 4,
+        "rank_move": -1
+      }
+    },
+    "order_stale": [
+      "InternVL3-14B",
+      "InternVL3-8B",
+      "Qwen3-VL-2B-Instruct",
+      "Qwen2-VL-2B-Instruct",
+      "InternVL3-2B",
+      "Qwen2.5-VL-7B-Instruct",
+      "Qwen2.5-VL-3B-Instruct"
+    ],
+    "order_fixed": [
+      "InternVL3-14B",
+      "InternVL3-8B",
+      "InternVL3-2B",
+      "Qwen3-VL-2B-Instruct",
+      "Qwen2-VL-2B-Instruct",
+      "Qwen2.5-VL-3B-Instruct",
+      "Qwen2.5-VL-7B-Instruct"
+    ],
+    "n_systems": 7,
+    "n_rank_changed": 5,
+    "delta_min": 0.38,
+    "delta_max": 12.54
+  }
+}

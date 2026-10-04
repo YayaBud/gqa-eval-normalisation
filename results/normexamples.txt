@@ -1,0 +1,52 @@
+================================================================================================
+B gains   (1398 cases)
+================================================================================================
+  raw generation                    reference     rule A        rule B        
+  Bottle                            bottles       bottle        bottles       InternVL3-14B
+  Plants                            plant         plants        plant         Qwen2.5-VL-7B-Instruct
+  Towels                            towel         towels        towel         Qwen2.5-VL-7B-Instruct
+  Pillows                           pillow        pillows       pillow        Qwen2.5-VL-7B-Instruct
+  Players                           player        players       player        Qwen2.5-VL-7B-Instruct
+  bag red                           bag           red           bag           InternVL3-14B
+  balloon                           balloons      balloon       balloons      Qwen3-VL-2B-Instruct
+  bus red                           bus           red           bus           Qwen3-VL-2B-Instruct
+
+================================================================================================
+A gains   (85 cases)
+================================================================================================
+  raw generation                    reference     rule A        rule B        
+  On left                           left          left          on            InternVL3-2B
+  on hill                           hill          hill          on            InternVL3-2B
+  on road                           road          road          on            Qwen2.5-VL-3B-Instruct
+  On beach                          beach         beach         on            InternVL3-2B
+  On floor                          floor         floor         on            InternVL3-14B
+  Sky blue                          blue          blue          sky           Qwen2.5-VL-7B-Instruct
+  on water                          water         water         on            Qwen2.5-VL-3B-Instruct
+  ski pole                          pole          pole          ski           Qwen2-VL-2B-Instruct
+
+================================================================================================
+agree   (31422 cases)
+================================================================================================
+  raw generation                    reference     rule A        rule B        
+  Banana                            banana        banana        banana        InternVL3-14B
+  Basket                            basket        basket        basket        InternVL3-2B
+  Batter                            batter        batter        batter        InternVL3-2B
+  Behind                            behind        behind        behind        InternVL3-14B
+  Beige.                            gray          beige         beige         Qwen2.5-VL-7B-Instruct
+  Bench.                            bench         bench         bench         Qwen2.5-VL-3B-Instruct
+  Bikini                            bikini        bikini        bikini        InternVL3-14B
+  Black.                            floor         black         black         Qwen2.5-VL-7B-Instruct
+
+================================================================================================
+both wrong   (2095 cases)
+================================================================================================
+  raw generation                    reference     rule A        rule B        
+  Apples                            drawer        apples        apple         Qwen2.5-VL-7B-Instruct
+  Bottle                            bench         bottle        bottles       InternVL3-2B
+  Branch                            log           branch        beach         InternVL3-8B
+  Bridge                            stairs        bridge        beige         InternVL3-14B
+  Bulbs.                            left          balls         bull          Qwen2.5-VL-7B-Instruct
+  Buses.                            trucks        buses         bushes        Qwen2.5-VL-7B-Instruct
+  CASTRO                            player        castle        castro        Qwen2.5-VL-3B-Instruct
+  Clocks                            ornament      clocks        clock         Qwen2.5-VL-7B-Instruct
+

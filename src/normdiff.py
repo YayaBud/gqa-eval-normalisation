@@ -11,13 +11,13 @@ succeeds -- which is the point.
 Emits normdiff.json for the paper and its verifier.
 """
 import json, os, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.stdout.reconfigure(encoding="utf-8")
 from gqa_answer_norm import (normalize_answer, strip_direct_prefixes,
                              build_vocab, snap_to_vocab)
 
-RUNNER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
-HERE = os.path.dirname(os.path.abspath(__file__))
+RUNNER = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.join(RUNNER, "natural")
 
 

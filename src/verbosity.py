@@ -10,13 +10,13 @@ answer vocabulary.
 Measured on the stored generations -- no inference.
 """
 import json, os, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.stdout.reconfigure(encoding="utf-8")
 from gqa_answer_norm import normalize_answer, strip_direct_prefixes, build_vocab
 
-RUNNER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+RUNNER = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 ROOT = os.path.join(RUNNER, "natural")
-R = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+R = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                                 os.path.join("results", "results.json")), encoding="utf-8"))
 IMP = R["normalisation_impact"]
 
@@ -76,7 +76,7 @@ loo = [pearson([x for j, x in enumerate(xs) if j != i],
 print(f"\nPearson  r = {r:.3f}   Spearman rho = {rho:.3f}   (n={n} checkpoints)")
 print(f"leave-one-out Pearson range: {min(loo):.3f} to {max(loo):.3f}")
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "results", "verbosity.json")
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "results", "verbosity.json")
 json.dump({"systems": rows, "pearson_r": round(r, 3), "spearman_rho": round(rho, 3),
            "loo_pearson_min": round(min(loo), 2), "loo_pearson_max": round(max(loo), 2),
            "n": n}, open(out, "w", encoding="utf-8"), indent=2)

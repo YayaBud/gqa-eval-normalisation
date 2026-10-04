@@ -13,7 +13,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 R = json.load(open(os.path.join(HERE, "results", "results.json"), encoding="utf-8"))
 OUT = os.path.join(HERE, "figures")
 os.makedirs(OUT, exist_ok=True)

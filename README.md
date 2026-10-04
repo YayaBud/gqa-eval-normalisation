@@ -38,15 +38,17 @@ Shifts range from **0.38 to 12.54 points**, and **5 of 7** checkpoints change ra
 
 ## Reproduce
 
+Run from the repository root:
+
 ```bash
-python analysis.py       # rank changes, 15-pair comparison  -> results/results.json
-python normdiff.py       # rule A vs rule B gained / lost       -> results/normdiff.json
-python verbosity.py      # in-vocabulary rate vs correction     -> results/verbosity.json
-python normexamples.py   # example answers where the rules differ
-python make_figures.py   # figures/
+python src/analysis.py       # rank changes, 15-pair comparison  -> results/results.json
+python src/normdiff.py       # rule A vs rule B gained / lost       -> results/normdiff.json
+python src/verbosity.py      # in-vocabulary rate vs correction     -> results/verbosity.json
+python src/normexamples.py   # example answers where the rules differ
+python src/make_figures.py   # figures/
 ```
 
-Python 3 standard library only, plus matplotlib for the figures. The bootstrap is exact and multinomial (`stdlib_boot.py`), so numpy is not needed.
+Python 3 standard library only, plus matplotlib for the figures. The bootstrap is exact and multinomial (`src/stdlib_boot.py`), so numpy is not needed.
 
 **Reproduction check (2026-10-04):** `results.json`, `normdiff.json` and `verbosity.json` match the paper's canonical results exactly, except the stratified bootstrap 95 % intervals, which differ by at most 0.04 points (Monte Carlo variation). Every point estimate, z-score and disagreement flag is identical.
 
@@ -54,8 +56,9 @@ Python 3 standard library only, plus matplotlib for the figures. The bootstrap i
 
 | Path | What it is |
 |---|---|
-| `gqa_answer_norm.py` | The normaliser: prefix stripping, lexical normalisation, vocabulary snap. The rule A / rule B difference is the token-selection step. |
-| `analysis.py` | Balanced-draw table, McNemar, post-stratified paired test, 15-pair comparison, normaliser rank analysis. |
+| `src/gqa_answer_norm.py` | The normaliser: prefix stripping, lexical normalisation, vocabulary snap. The rule A / rule B difference is the token-selection step. |
+| `src/analysis.py` | Balanced-draw table, McNemar, post-stratified paired test, 15-pair comparison, normaliser rank analysis. |
+| `src/normdiff.py`, `src/verbosity.py`, `src/normexamples.py`, `src/make_figures.py` | Rule A vs rule B gain/loss, the in-vocabulary correlation, worked examples, and the figures. |
 | `data/natural/<model>/` | Natural type mix, 5,000 questions (seed 42), 7 public checkpoints, single pass. `pq_*.jsonl` holds per question: qid, type, question, ground truth, raw generation, scored answer. |
 | `data/balanced/<model>/` | 1,000 questions per structural type, 6 checkpoints. The two draws are independent apart from 182 shared questions. |
 | `results/`, `figures/` | Outputs of the scripts above. |

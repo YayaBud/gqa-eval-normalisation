@@ -14,7 +14,7 @@ analysis script, restricted to the public single-pass checkpoints.
 import collections, itertools, json, math, os, random, sys
 from datetime import datetime, timezone
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, HERE)
 import stdlib_boot  # exact multinomial bootstrap, stdlib only
 from gqa_answer_norm import (normalize_answer, strip_direct_prefixes,
